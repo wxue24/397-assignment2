@@ -30,4 +30,7 @@
    - If agent lands on terminal state he gets +5
    - If agent lands on terminal state and finds all three buried treasures he gets +15
 
+## Running episodes
+
+Navigate to the directory and run `python3 simulation.py`. If you need to change simulation parameters (number of episodes, max number of steps agent can take), modify `simulate(10,25)`
 
