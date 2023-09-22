@@ -1,7 +1,7 @@
 # Index of each inner array represents starting location
 # Each tuple represents end location and probability
 
-STM = [
+STM: list[list[tuple[int, float]]] = [
     [(2, 0.3), (3, 0.1), (4, 0.6)],
     [(3, 0.5), (4, 0.5)],
     [(4, 0.2), (5, 0.2), (6, 0.3), (7, 0.3)],
