@@ -20,7 +20,10 @@
 
    ![State Transition Matrix drawio-2](https://github.com/wxue24/397-assignment2/assets/64175276/5ea72347-70d0-4785-9cd4-392a5a36c36b)
 
-6. Reward function
+   ![Matrix drawio](https://github.com/wxue24/397-assignment2/assets/64175276/c4c3385d-253d-46a0-901a-988bd6f86f24)
+
+
+7. Reward function
    - If agent digs at a treasure location he gets +10
    - If agent digs at wrong location he gets -1
    - If agent moves to location he hasn't been to he gets +1
