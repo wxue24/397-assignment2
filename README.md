@@ -24,8 +24,9 @@
 
 
 7. Reward function
-   - If agent digs at a treasure location he gets +10
-   - If agent digs at wrong location he gets -1
-   - If agent moves to location he hasn't been to he gets +1
-   - If agent moves to location he has been to he gets -1
+   - If agent digs at a treasure location he gets +2 
+   - If agent moves from location to location he gets -1
+   - If agent lands on terminal state he gets +5
+   - If agent lands on terminal state and finds all three buried treasures he gets +15
+
 
