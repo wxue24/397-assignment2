@@ -20,7 +20,8 @@
 
    ![State Transition Matrix drawio-2](https://github.com/wxue24/397-assignment2/assets/64175276/5ea72347-70d0-4785-9cd4-392a5a36c36b)
 
-   ![Matrix drawio](https://github.com/wxue24/397-assignment2/assets/64175276/c4c3385d-253d-46a0-901a-988bd6f86f24)
+   ![State Transition Matrix drawio-3](https://github.com/wxue24/397-assignment2/assets/64175276/a689b9bf-2234-4f61-a60f-9a3495607b49)
+
 
 
 7. Reward function
