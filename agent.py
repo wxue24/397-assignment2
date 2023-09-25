@@ -42,7 +42,7 @@ class Agent(object):
             return ("dig", 0)
 
         else:
-            self.rewards -= 1
+            self.rewards -= 1 * GAMMA ** self.steps
             # Randomly choose where to go next based on STM
             locations: list[int] = []
             probabilities: list[int] = []
