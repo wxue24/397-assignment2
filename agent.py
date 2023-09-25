@@ -6,7 +6,7 @@ DIG_PROB = 0.1
 MOVE_PROB = 0.9
 INITIAL_LOC = 0
 TERMINAL_LOC = 9
-
+GAMMA = 0.9
 
 class Agent(object):
 
@@ -25,7 +25,7 @@ class Agent(object):
         return self.location
 
     def getRewards(self):
-        return self.rewards
+        return round(self.rewards, 2)
 
     def atTerminal(self):
         return self.location == TERMINAL_LOC
@@ -36,7 +36,7 @@ class Agent(object):
         if random.random() <= DIG_PROB and not self.locations[self.location].hasBeenDug():
             # Dig
             if self.locations[self.location].dig():
-                self.rewards += 2
+                self.rewards += 2 * GAMMA ** self.steps
                 self.treasures_found += 1
                 return ("dig", 2)
             return ("dig", 0)
@@ -55,9 +55,9 @@ class Agent(object):
 
             if self.location == TERMINAL_LOC:
                 if self.treasures_found == 3:
-                    self.rewards += 15
+                    self.rewards += 15 * GAMMA ** self.steps
                     return ("move", 15)
                 else:
-                    self.rewards += 5
+                    self.rewards += 5 * GAMMA ** self.steps
                     return ("move", 5)
             return ("move", -1)
