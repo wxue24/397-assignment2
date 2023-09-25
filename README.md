@@ -18,10 +18,9 @@
   
 5. State Transition Matrix
 
-   ![State Transition Matrix drawio-2](https://github.com/wxue24/397-assignment2/assets/64175276/5ea72347-70d0-4785-9cd4-392a5a36c36b)
+![State Transition Matrix drawio-5](https://github.com/wxue24/397-assignment2/assets/64175276/0178e631-929a-4ea4-b1bd-d094ba20e325)
 
-   ![State Transition Matrix drawio-3](https://github.com/wxue24/397-assignment2/assets/64175276/a689b9bf-2234-4f61-a60f-9a3495607b49)
-
+![State Transition Matrix drawio-4](https://github.com/wxue24/397-assignment2/assets/64175276/4ba97d8e-0f78-4bcb-8882-bed7bcf39d6f)
 
 
 7. Reward function
