@@ -14,7 +14,7 @@
    - Whether it has been dug
   
 4. Set of Agent actions
-   - Move, dig
+   - Move (90% probability), dig (10% probability)
   
 5. Apply gamma of 0.9 at every time step
   
