@@ -16,7 +16,7 @@
 4. Set of Agent actions
    - Move, dig
   
-5. Gamma (0.9)
+5. Apply gamma of 0.9 at every time step
   
 6. State Transition Matrix
 
