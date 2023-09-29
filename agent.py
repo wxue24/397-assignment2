@@ -8,6 +8,7 @@ INITIAL_LOC = 0
 TERMINAL_LOC = 9
 GAMMA = 0.9
 
+
 class Agent(object):
 
     def __init__(self, locations: list[Location]):
@@ -32,8 +33,11 @@ class Agent(object):
     def randomAction(self) -> tuple[str, int]:
         self.steps += 1
 
-        if random.random() <= DIG_PROB and not self.locations[self.location].hasBeenDug():
-            # If dig returns true, treasure is found
+        if random.random() <= DIG_PROB:
+            # If treasure has already been dug, return 0
+            if self.locations[self.location].hasBeenDug():
+                return ("dig", 0)
+            # Else if dig returns true, treasure is found
             if self.locations[self.location].dig():
                 self.rewards += 2 * GAMMA ** self.steps
                 self.treasures_found += 1
