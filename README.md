@@ -6,7 +6,7 @@
 
    - Locations 0-9
    - 0 is the initial state, 9 is the terminal
-   - 3 randomly generated locations have treasure
+   - 3,6,8 have treasure
 
 2. State information at each state
    - Name

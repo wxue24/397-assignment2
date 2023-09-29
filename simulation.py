@@ -7,7 +7,7 @@ NUM_LOCATIONS = 10
 
 
 def simulate(episodes: int, agent_steps_limit=25):
-    treasure_locations = random.sample(range(NUM_LOCATIONS), NUM_TREASURE)
+    treasure_locations = [3,6,8]
 
     # create locations
     locations: list[Location] = []
