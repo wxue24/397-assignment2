@@ -9,14 +9,16 @@
    - 3 randomly generated locations have treasure
 
 2. State information at each state
-   - Agent location, all locations, current reward, treasures found, steps taken, 
+   - Name
+   - Whether it has treasure
+   - Whether it has been dug
   
-3. Set of Agent actions
+4. Set of Agent actions
    - Move, dig
   
-4. Gamma (0.9)
+5. Gamma (0.9)
   
-5. State Transition Matrix
+6. State Transition Matrix
 
 ![State Transition Matrix drawio-5](https://github.com/wxue24/397-assignment2/assets/64175276/0178e631-929a-4ea4-b1bd-d094ba20e325)
 
