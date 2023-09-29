@@ -18,13 +18,12 @@ def simulate(episodes: int, agent_steps_limit=25):
             locations.append(Location(i, False))
 
     for e in range(1, episodes + 1):
-        agent = Agent(treasure_locations, locations)
+        agent = Agent(locations)
         while agent.getSteps() <= agent_steps_limit and not agent.atTerminal():
 
+            print("Steps: {} | location: {} | current reward: {}".format(
+                agent.getSteps(), agent.getLocation(), agent.getRewards()))
 
-            print("Steps: {} | location: {} | current reward: {}".format(agent.getSteps(), agent.getLocation(), agent.getRewards()))
-
-            
             action, reward = agent.randomAction()
             print("Agent", action, "and got", reward, "rewards")
 
@@ -33,7 +32,6 @@ def simulate(episodes: int, agent_steps_limit=25):
             print("Terminal state reached")
         print("Total reward:", agent.getRewards())
         print("")
-        
 
 
 simulate(10, 25)
