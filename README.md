@@ -4,12 +4,12 @@
 
 1. States
 
-   - Locations 1-10
-   - 1 is the initial state, 10 is the terminal
+   - Locations 0-9
+   - 0 is the initial state, 9 is the terminal
+   - 3 randomly generated locations have treasure
 
 2. State information at each state
-   - Agent current reward, location, time steps
-   - Locations' name, treasure, inital/terminal
+   - Agent location, all locations, current reward, treasures found, steps taken, 
   
 3. Set of Agent actions
    - Move, dig
@@ -23,7 +23,7 @@
 ![State Transition Matrix drawio-4](https://github.com/wxue24/397-assignment2/assets/64175276/4ba97d8e-0f78-4bcb-8882-bed7bcf39d6f)
 
 
-7. Reward function
+6. Reward function
    - If agent digs at a treasure location he gets +2 
    - If agent moves from location to location he gets -1
    - If agent lands on terminal state he gets +5
