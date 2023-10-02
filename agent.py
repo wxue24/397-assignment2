@@ -8,7 +8,6 @@ INITIAL_LOC = 0
 TERMINAL_LOC = 9
 GAMMA = 0.9
 
-
 class Agent(object):
 
     def __init__(self, locations: list[Location]):
