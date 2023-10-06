@@ -33,7 +33,7 @@
 
 ## Value Function
 
-In order to simplify the process, we define the rewards for each location as -1 for 6/10 islands, +3 for 3/10 islands, and +15 for the terminal island. In the `simulate` method we calculate the values for each state using the closed form of the bellman equation. These values allow us to determine the optimal policy (the agent should choose the transition leading to the highest value). The value of each island is printed out. The optimal policy as discovered by the value calculations is 0 -> 2 -> 6 -> 9, which solves the MDP. The maximum reward is -1 + 0.9(-1) + 0.9^2(2) + 0.9^3(15) = 10.65.
+The value function's purpose within the context of my MRP is to help the agent discover the optimal policy, or in this case to get to the terminal island with the highest reward. In order to simplify the process, we define the rewards for each location as -1 for 6/10 islands, +3 for 3/10 islands, and +15 for the terminal island. In the `simulate` method we calculate the values for each state using the closed form of the bellman equation, and print those values out. These values allow us to determine the optimal policy (the agent should choose the transition leading to the highest value). The value of each island is printed out. The optimal policy as discovered by the value calculations is 0 -> 2 -> 6 -> 9, which solves the MDP. The maximum reward is thus -1 + 0.9(-1) + 0.9^2(2) + 0.9^3(15) = 10.65.
 
 ## Packages
 
